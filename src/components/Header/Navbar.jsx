@@ -1,6 +1,7 @@
 import React from 'react'
 import { GrSearch } from 'react-icons/gr'
 import { BsBell, BsSearch } from 'react-icons/bs'
+import NavLinks from './NavLinks'
 
 function NavBar() {
     const links = [
@@ -19,9 +20,7 @@ function NavBar() {
                 <div className='flex'>
 
                 {/* Navigation links */}
-                {links.map(link => (
-                    <a href='/' key={link} className ="mr-5 hover:text-gray-500">{link}</a>
-                ))}
+                <NavLinks />
                     
                 {/* Icons */}
                    <BsSearch className=' text-l mx-4 text-white' />
