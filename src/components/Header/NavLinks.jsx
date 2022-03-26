@@ -1,23 +1,37 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Trending from '.../Pages/Trending'
+import { Link } from 'react-router-dom';
 
 function NavLinks() {
+    
+const links = [
+    
+    {
+        path: '/exclusive',
+        name: 'Exclusive',
+    },
+    {
+        path: '/trending',
+        name: 'Trending',
+    },
+    {
+        path: '/upcoming',
+        name: 'Upcoming',
+    },
+    {
+        path: '/watchlist',
+        name: 'Watchlist',
+    },
+];
+
+
   return (
-    <div>
-        <Router>
-        
-        
-        
-        <Routes>
-            <Route path='/' element = {<Trending />} />
-            {/* <Route path='/destination' element = {} />
-            <Route path='/crew' element = {} />
-            <Route path='/technology' element = {} /> */}
-        </Routes>
-        
-      </Router>
-    </div>
+     <>
+            {links.map((link, index) => (
+                <Link className="lowercase text-sm mr-8" to={link.path} key={`${link.name}-${index}`}>
+                    {link.name}
+                </Link>
+            ))}
+        </>
   )
 }
 

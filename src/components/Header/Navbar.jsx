@@ -2,20 +2,16 @@ import React from 'react'
 import { GrSearch } from 'react-icons/gr'
 import { BsBell, BsSearch } from 'react-icons/bs'
 import NavLinks from './NavLinks'
+import BrandLink from '../BrandLinks/BrandLink'
 
 function NavBar() {
-    const links = [
-        "Exclusive",
-        "Trending", 
-        "Upcoming",
-        "Watchlist"
-    ]
+ 
     return (
         <nav className=' font-krona text-sm text-gray-400  '>
             <div className='flex items-center justify-between container mx-auto py-4'>
 
                 {/* logo */}
-                <div><h1 className=' text-2xl font-krona text-orange-600'>Movix</h1></div>
+                <BrandLink />
 
                 <div className='flex'>
 
