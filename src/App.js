@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
 import ScrollToTop from './components/Hooks/ScrollToTops';
+import NavBar from './components/NavBar/Navbar';
 
 
 import Exclusive from './Pages/Exclusive';
@@ -21,8 +21,7 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
-        <Header/>
-    
+        <NavBar />
         <Routes>
           <Route path='/' element = {<Home />} />
           <Route path='/exclusive' element={<Exclusive />} />

@@ -1,10 +1,11 @@
 import React from 'react'
-import NavBar from './Navbar'
+import NavBar from '../NavBar/Navbar'
+
 
 
 function Header() {
   return (
-      <header className='h-screen bg-black'>
+      <header className='h-screen bg-black '>
          <NavBar />
       </header>
   )

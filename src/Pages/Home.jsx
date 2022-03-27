@@ -1,19 +1,22 @@
 import React from 'react'
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
-import Exclusive from './Exclusive'
-import Trending from './Trending'
-import Upcoming from './Upcoming'
-import Watchlist from './Watchlist'
+import AdBanner from '../components/AdBanner/AdBanner'
+
+
 
 function Home() {
   return (
-    <>
-          <Exclusive />
-          <Trending />
-          <Upcoming />
-          <Watchlist />
-    </>
+    <div className=' bg-black'>
+      {/* 
+      Main Banner
+      Action genre
+      upcoming
+      new movies
+      subscribeAd
+      Find your favoruite genre search */}
+      <div className='py-8'>
+        <AdBanner/>
+      </div>
+    </div>
   )
 }
 

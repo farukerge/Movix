@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+       '53' : '53%',
+      },
       fontFamily: {
       'krona': ['Krona One','sans-serif'],
       'poppins': ['Poppins', 'sans-serif'],
